@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emojis Academy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/Emoji Icon.png" width="100" height="70" alt="Emojis Icon"> Discover, Learn & Grow with US!
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home<i class="fas fa-home"></i></a></li>
+        <li><a href="playschool.html">Playschool & Daycare</a></li>
+        <li><a href="academy.html" class="active">Emojis Academy</a></li>
+        <li><a href="#contact"></i><i class="fas fa-phone"></i> Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="academy-content">
+    <strong><a href="#contact" class="admission-badge">ADMISSIONS OPEN NOW<br><br>Click Here!</a></strong>
+    <div class="content-box">
+    <h1><i class="fas fa-grin-wink"></i> <i class="fas fa-grin-stars"></i>&nbsp;&nbsp;&nbsp;Emojis Academy - Talent & Fun in One Place&nbsp;&nbsp;&nbsp;<i class="fas fa-grin-stars"></i> <i class="fas fa-grin-wink"></i></h1>
+    <h4><i class="fa fa-arrow-down"></i> <i class="fa fa-arrow-down"></i> <i class="fa fa-arrow-down"></i> Classes Offered <i class="fa fa-arrow-down"></i> <i class="fa fa-arrow-down"></i> <i class="fa fa-arrow-down"></i></h4>
+    <ul class="feature-list">
+      <li><i class="fas fa-check-circle"></i>Yoga</li>
+      <li><i class="fas fa-check-circle"></i>Karate</li>
+      <li><i class="fas fa-check-circle"></i>Drawing</li>
+      <li><i class="fas fa-check-circle"></i>Classical & Western Dance</li>
+      <li><i class="fas fa-check-circle"></i>Carnatic Music</li>
+      <li><i class="fas fa-check-circle"></i>Keyboard</li>
+      <li><i class="fas fa-check-circle"></i>Chess</li>
+      <li><i class="fas fa-check-circle"></i>Language Class</li>
+      <li><i class="fas fa-check-circle"></i>French Class</li>
+      <li><i class="fas fa-check-circle"></i>Phonics</li>
+      <li><i class="fas fa-check-circle"></i>Zumba Classes for Women</li>
+      <li><i class="fas fa-check-circle"></i>Abacus</li>
+    </ul>
+    <p><strong><i class="fas fa-clock"></i> Timings :</strong> 5:00 pm – 8:00 pm</p>
+    </div>
+  </section>
+
+  <div class="text-banner">
+      <span><a href="#contact">ADMISSIONS OPEN NOW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Discover, Learn & Grow with Love and Joy - With US at Emojis Academy!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ADMISSIONS OPEN NOW</a></span>
+  </div>
+
+  <section class="gallery">
+  <h1 class="section-title">Explore our Gallery <i class="fas fa-camera-retro"></i></h1>
+  <div class="gallery-carousel-container">
+    <button class="carousel-btn left" onclick="scrollGallery(-1)">&#10094;</button>
+    <div class="gallery-carousel" id="galleryCarousel">
+      <img src="images/PS Image Front.jpeg" alt="School Image">
+      <img src="images/PS Image 2.png" alt="School Image">
+      <img src="images/Acad Image 1.png" alt="School Image">
+      <img src="images/Acad Image 3.jpeg" alt="School Image">
+      <img src="images/Acad Image 2.png" alt="School Image">
+      <div class="video-container">
+      <div class="video-wrapper">
+        <video id="schoolVideo1" preload="metadata">
+          <source src="images/Acad Video 1.MP4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-controls">
+          <button class="fullscreen-btn" onclick="openFullscreen('schoolVideo1')">
+            ⏯️
+          </button>
+        </div>
+      </div>
+      </div>
+      <div class="video-container">
+      <div class="video-wrapper">
+        <video id="schoolVideo2" preload="metadata">
+          <source src="images/Acad Video 2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-controls">
+          <button class="fullscreen-btn" onclick="openFullscreen('schoolVideo2')">
+            ⏯️
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <button class="carousel-btn right" onclick="scrollGallery(1)">&#10095;</button>
+  </div>
+  </section>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightboxImg">
+  </div>
+
+  <section id="contact" class="contact-section">
+  <div class="contact-logo left">
+    <img src="images/Timing Icon 2.png" alt="Left Logo">
+  </div>
+
+  <div class="contact-content">
+    <h2>Contact Us</h2>
+    <div class="social-icons">
+      <a href="https://wa.me/918220026992" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.facebook.com/61571480162505" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/emojisacademy" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p><i class="fas fa-phone"></i>  
+      <a href="tel:8220026992">82200 26992</a>, 
+      <a href="tel:8220026952">82200 26952</a>
+    </p>
+    <p><i class="fas fa-envelope"></i>  
+      <a href="mailto:emojisacademy4@gmail.com">emojisacademy4@gmail.com</a>
+    </p>
+    <p><i class="fas fa-map-marker-alt"></i>  
+     <a href="https://maps.app.goo.gl/FXSkVpEboVuXhUtFA"> No.16-A, Rajiv Nagar, Near Sabari Eye Care, Bagalur Road, Hosur - 635109 </a>
+    </p>
+  </div>
+
+  <div class="contact-logo right">
+    <img src="images/Admission Icon.png" alt="Right Logo">
+  </div>
+  </section>
+
+  <footer>
+    <p>Copyright © 2025 Emojis Playschool, Daycare & Academy</p>
+  </footer>
+  <script src="javascript/script.js"></script>
+</body>
+</html>

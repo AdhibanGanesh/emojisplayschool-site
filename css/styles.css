@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "American Typewriter", serif;
   margin: 0;
   padding: 0;
   background: #fcca74;
@@ -31,6 +31,7 @@ body {
   list-style: none;
   display: flex;
   gap: 20px;
+  align-items: flex-end;
 }
 
 .nav-links li a {
@@ -81,7 +82,7 @@ body {
   }
 
   .navbar {
-    padding: 0.5em 1em;
+    padding: 0.001em 1em;
   }
 
   .logo {
@@ -152,6 +153,9 @@ body {
   min-height: 600px;   
   position: relative;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-family: "Pacifico", cursive;
   color: #02172b; 
 }
@@ -168,9 +172,41 @@ body {
   border-radius: 50%;
   padding: 5px;
   z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 3px solid white;
+  overflow: hidden;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .hero-box {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .whatsapp-icon {
+    top: 1em;
+    right: 1em;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-box {
+    width: 80%;
+  }
+
+  .whatsapp-icon {
+    top: 1.5em;
+    right: 1.5em;
+  }
 }
 
 .whatsapp-float:hover {
@@ -182,10 +218,12 @@ body {
   background: rgba(255, 255, 255, 0.92);
   padding: 0.4em 1.5em;
   border-radius: 1em;
+  width: 65vw;
   max-width: 1200px;
   position: absolute;
-  left: 17%;
   bottom: 0.04em; 
+  left: 50%;
+  transform: translateX(-50%);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   animation: fadeInUp 5s ease-out;
   text-align: center;
@@ -223,11 +261,11 @@ body {
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(-50%, 20px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(-50%, 0);
   }
 }
 
@@ -554,6 +592,7 @@ video {
 
 .contact-section {
   background: #003366;
+  font-family: "Nunito", sans-serif;
   padding: 0.5em;
   text-align: center;
   color: #fcd187;
@@ -595,6 +634,7 @@ video {
 @media (max-width: 768px) {
   .contact-section {
     flex-direction: column;
+    text-align: center;
   }
 
   .contact-logo {
@@ -844,6 +884,7 @@ video {
 
 footer {
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
   background: #02172b;
   color: white;
   padding: 1em;
